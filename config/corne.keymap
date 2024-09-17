@@ -78,6 +78,11 @@
             bindings = <&kp CAPS>;
             key-positions = <12 13>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <11 10>;
+        };
     };
 
     keymap {
@@ -91,7 +96,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y  &kp U      &kp I         &kp O    &kp P     &as_ht BSPC DELETE
+&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y  &kp U      &kp I         &kp O    &kp P     &kp BSPC
 &kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F      &kp G    &kp H  &kp J      &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N  &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
                                 &kp LEFT_ALT  &kp ENTER  &to 1    &to 2  &kp SPACE  &kp LEFT_GUI
@@ -139,7 +144,7 @@
 
         autoshift {
             bindings = <
-&trans  &as Q  &as W  &as E   &as R   &as T     &as Y   &as U   &as I   &as O   &as P   &as DELETE
+&trans  &as Q  &as W  &as E   &as R   &as T     &as Y   &as U   &as I   &as O   &as P   &trans
 &trans  &as A  &as S  &as D   &as F   &as G     &as H   &as J   &as K   &as L   &trans  &trans
 &trans  &as Z  &as X  &as C   &as V   &as B     &as N   &as M   &trans  &trans  &trans  &trans
                       &trans  &trans  &trans    &trans  &trans  &trans
